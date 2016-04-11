@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define MAX 100
+main (void)
+{
+int tab[MAX];
+int *w1, *w2, *w3;
+w1 = &tab[MAX-1];
+w2 = tab;
+if (w2 > w1)
+printf("w2 jest wskaznikiem do dalszego elementu\n");
+else
+{
+printf("w2 jest wskaznikiem do blizszego elementu\n");
+w3 = NULL;
+}
+if (w3 == NULL)
+printf("Roznica wskaznikow: %d\n", (w1-w2));
+return 0;
+}

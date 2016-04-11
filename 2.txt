@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include "prototypes.h"
+main (void)
+{
+char line[MAXLENGHT];
+extern int id;
+pobierzTekst(line);
+/* Pobieranie tekstu do line[] */
+wyswietlTekst(line);
+/* Wyswietlanie tekstu z line[] */
+skopiujTekst(line);
+/* Kopiowanie tesktu line[] do bufor[] */
+wyswietlTekst(bufor);
+/* Wyswietlanie tekstu z bufor */
+printf("%d\n", id);
+return 0;
+}

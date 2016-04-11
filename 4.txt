@@ -1,0 +1,15 @@
+#include <stdio.h>
+void ilosc_wywolan (void);
+main (void)
+{
+ilosc_wywolan();
+ilosc_wywolan();
+ilosc_wywolan();
+return 0;
+}
+void ilosc_wywolan (void)
+{
+static int i = 1;
+printf("Funkcja wywolana po raz: %d\n", i);
+i++;
+}

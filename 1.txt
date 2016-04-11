@@ -1,0 +1,20 @@
+#include <stdio.h>
+main ()
+{
+int dolnaGranica, gornaGranica;
+int i, ilParz = 0;
+printf("Dolna granica: ");
+scanf("%d", &dolnaGranica);
+printf("Gorna granica: ");
+scanf("%d", &gornaGranica);
+printf("Pomiedzy zakresem: <%d; %d> ", dolnaGranica, gornaGranica);
+printf("liczbami parzystymi sa: ");
+for (i = dolnaGranica; i <= gornaGranica; i++)
+if (i % 2 == 0)
+{
+ilParz++;
+printf("%d ", i);
+}
+printf("\nOgolna ilosc liczb parzystych z tego zakresy to: %d\n",
+ilParz);
+}
